@@ -1,7 +1,7 @@
 <template>
   <div class="my-element">
     <p :style="textStyle">I am a custom element !</p>
-    <p>v0.0.10</p>
+    <p>v0.0.11</p>
     <p>{{ version }}</p>
   </div>
 </template>
