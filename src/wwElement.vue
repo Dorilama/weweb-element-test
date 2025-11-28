@@ -1,17 +1,16 @@
 <template>
   <div class="my-element">
     <p :style="textStyle">I am a custom element !</p>
-    <p>v0.0.9</p>
-    <p>{{ t }}</p>
+    <p>v0.0.10</p>
+    <p>{{ version }}</p>
   </div>
 </template>
 
 <script>
-import prettyMilliseconds from "pretty-ms";
+import { version } from "@instantdb/core";
 export default {
   setup() {
-    const t = prettyMilliseconds(1337000000);
-    return { t };
+    return { version };
   },
   props: {
     content: { type: Object, required: true },
