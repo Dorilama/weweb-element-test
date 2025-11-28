@@ -1,12 +1,18 @@
 <template>
   <div class="my-element">
     <p :style="textStyle">I am a custom element !</p>
-    <p>v0.0.7</p>
+    <p>v0.0.8</p>
+    <p>{{ t }}</p>
   </div>
 </template>
 
 <script>
+import prettyMilliseconds from "pretty-ms";
 export default {
+  setup() {
+    const t = prettyMilliseconds(1337000000);
+    return { t };
+  },
   props: {
     content: { type: Object, required: true },
   },

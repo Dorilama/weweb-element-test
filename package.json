@@ -1,11 +1,12 @@
 {
   "name": "weweb-element-test",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "build": "weweb build",
     "serve": "weweb serve"
   },
   "devDependencies": {
-    "@weweb/cli": "latest"
+    "@weweb/cli": "latest",
+    "pretty-ms": "9.3.0"
   }
 }
